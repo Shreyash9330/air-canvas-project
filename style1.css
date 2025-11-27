@@ -1,6 +1,5 @@
 /* register .html */
 
-
 /* General Styles */
 * {
     margin: 0;
@@ -108,4 +107,5 @@
   
   p a:hover {
     text-decoration: underline;
+
   }
