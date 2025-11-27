@@ -1,3 +1,4 @@
+// JavaScript
 
 let selectedColor = 0;
 
@@ -11,4 +12,5 @@ function selectColor(colorIndex) {
 selectedColor = colorIndex;
 fetch('/select_color/${colorIndex}', { method: "POST" });
 }
+
 
