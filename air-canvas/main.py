@@ -1,7 +1,4 @@
 
-
-# #        FINAL CODE
-
 import cv2
 import mediapipe as mp
 import numpy as np
@@ -9,8 +6,6 @@ from collections import deque
 from flask import Flask, render_template, Response, request, redirect,session
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash,check_password_hash
-
-
 
 app = Flask(__name__)
 app.secret_key="your_secret_key"
@@ -92,8 +87,6 @@ def login():
             return redirect('/index2')
         else:
             return "invalid credinals"
-        
-        
         
     return render_template('index.html')
 
@@ -216,11 +209,10 @@ def gen_frames():
         yield (b'--frame\r\n'
                b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
 
-
-
 # Run App
 if __name__ == '__main__':
     app.run(debug=True)
+
 
 
 
